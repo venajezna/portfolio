@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="header">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <!-- Logo -->
+                    <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="hear.png" /> VENIA
+                        </a>
+                    </div>
+                    <!-- Nav -->
+                    <div class="col-12 col-md-6 text-center text-md-end ">
+                        <ul class="nav list-unstyled d-flex justify-content-center justify-content-md-end gap-3">
+                            <li class = "mt-4">
+                                <a href="#home">home</a>
+                            </li>
+                            <li class = "mt-4">
+                                <a href="#artworks">products</a>
+                            </li>
+                            <li class = "mt-4">
+                                <a href="#aboutus">about us</a>
+                            </li>
+                            <li class = "mt-4">
+                                <a href="#contact">contact</a>
+                            </li>
+                            <li class = "mt-2">
+                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                                    login
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Login -->
+        <div id="id01" class="modal mt-5">
+
+          <form class="modal-content animate" action="home.html" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h1 class = "navbar-brand">Welcome to VENIA</h1>
+            </div>
+
+            <div class="container">
+
+              <label for="uname" class = "navbar-brand colorsize"><b>Username</b></label>
+              <input type="text" id = "user" placeholder="vena" name="uname" class = "display" required>
+
+              <label for="psw" class = "navbar-brand colorsize"><b>Password</b></label>
+              <input type="password" id = "pass" placeholder="jezna" name="psw" class = "display mb-5" required>
+
+              <button onclick="loginButton(event)" type="submit mt-5">Login</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Function -->
+        <script>
+            function loginButton(event) {
+                event.preventDefault();
+
+                var userName = "vena";
+                var passWord = "jezna";
+
+                var enteredUser = document.getElementById("user").value;
+                var enteredPass = document.getElementById("pass").value;
+
+                if (enteredUser == userName && enteredPass == passWord) {
+                    alert ("Login successful!");
+                    window.location.href = "home.html";
+                } else {
+                    alert ("Incorrect username or password!");
+                }
+            }
+        </script>
+
+
+
+</body>
+</html>
+

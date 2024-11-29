@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+.courier-new {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.rakkas-regular {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg.png') no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+.header .container {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.header .navbar-brand {
+  margin-left: 0;
+  flex-shrink: 0;
+  left: 0;
+}
+
+.header .logo {
+  width: 50px;
+  gap: 10px;
+}
+
+nav {
+    background-color: #f39eba;
+    min-width: 50%;
+    min-height: 10%;
+    height: 15vh;
+    position: relative;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-brand:hover {
+  color: #9c4965;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #9c4965;
+    font-family: "Rakkas", serif;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 900;
+    margin: auto 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 30%;
+    height: 40px;
+    margin-top: -5px;
+}
+
+.wrapper {
+    width: 420px;
+    background-color: #7d6c9e;
+    border: 2 px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: white;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: "Rakkas", serif;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #black;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input-box input::placeholder {
+    color: #black;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #9c4965;
+    font-weight: 600;
+}
+
+.p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(144, 112, 120);
+}
+
+#about-us .btn {
+    background-color: #9c4965;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 20px;
+    width: 90%;
+}
+
+#about-us a {
+  text-decoration: underline;
+  color: rgb(144, 112, 120);
+}
+
+#about-us {
+  padding-top: 80px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.display {
+  color: #8b8888;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+}
+
+button {
+  background-color: #9c4965;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 20px;
+  height: 7vh;
+}
+
+button:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #9c4965;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 15vh;
+}
+
+.modal-content {
+  background: url('bg.png');
+  margin: 5% auto 15% auto;
+  border: 1px solid #000000;
+  width: 50%;
+  max-width: 70%;
+  padding: 30px;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #1e0533;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #7d6c9e;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+.card-img-top {
+  height: 400px;
+  width: 100%;
+}
+
+.position-absolute {
+  align-items: center;
+  justify-content: center;
+}
+
+.position-absolute img {
+  height: 1200px;
+  width: 2000px;
+}
+
+#products .products {
+  margin-bottom: 50px;
+}
+
+#products .btn {
+ background-color: white;
+ border: 0;
+ color: #9c4965;
+ font-size: 15px;
+ min-width: 30%;
+ max-width: 50%;
+ border-radius: 0;
+}
+
+.card {
+  border-radius: 0;
+  min-width: 30%;
+  height: 65vh;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-inner img {
+  padding-top: 15px;
+  width: 100%;
+  height: 55vh;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.colorsize {
+  font-size: 25px;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 90vh;
+}
+
+#about-us img {
+  width: 70%;
+  height: 80vh;
+}
+
+.card {
+  background-color: #f39eba7c;
+  border: 0;
+  padding: 10px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.card-title {
+  font-weight: 900;
+}
+
+.card-body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #742c44;
+  font-weight: 400;
+}
+
+#contact {
+  text-align: center;
+  background-color: #f39eba;
+  color: #9c4965;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+#contact h1 {
+  text-align: center;
+}
+
+#contact p {
+  color: #9c4965;
+}
+
+.spotify {
+  width: 70%;
+  max-width: 600px;
+  height: 352px;
+  margin: 0 auto;
+  display: block;
+}
+
+.socmed {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.socmed li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #9c4965;
+  transition: color 0.3s;
+}
+
+.socmed li a:hover {
+  color: #9c4965;
+}
+
+.footer {
+  background-color: #222;
+  color: #bdb0b0;
+  padding: 30px;
+  gap: 10px;
+}
+
+.footer p {
+  text-decoration: underline;
+  color: #bdb0b0;
+}
+
+.footer h5 {
+  font-family: "Rakkas", serif;
+}
+
+.footer h6 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+}
+
+.footer a, h6 {
+  text-decoration: none;
+  color: #6d5b61;
+}
+
+.footer .btn {
+  min-width: 30%;
+  width: 100%;
+  background-color: #9c4965;
+  color: white;
+  border: 0;
+  height: 5vh;
+  font-weight: 900;
+}
+
+.footer textarea {
+  width: 100%;
+  border: 0;
+  height: 20vh;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-brand {
+      font-size: 30px;
+  }
+  .btn {
+      font-size: 16px;
+      padding: 12px 15px;
+  }
+  .navbar {
+    position: static !important;
+    flex-direction: column;
+  }
+  nav ul li a, .wrapper {
+    font-size: 20px;
+    text-decoration: none;
+    }
+  button {
+      width: 80%;
+      height: 5vh;
+      font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
